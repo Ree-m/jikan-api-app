@@ -9,7 +9,7 @@ export type MangaProp={
 const MangaItem = ({title,synopsis,mal_id}:MangaProp) => {
   return (
     <div>
-        <h1>{title}</h1>
+        <h1 className="text-yellow-400">{title}</h1>
         <p>{synopsis}</p>
     </div>
   )

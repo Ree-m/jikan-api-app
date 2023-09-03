@@ -10,7 +10,7 @@ const MangaGallery = ({ mangas }: MangaGalleryProp) => {
         <div>
             {mangas && (
                 mangas.map(manga => (
-                    <Link href={`/manga/${manga.mal_id}`} key={manga.mal_id}>
+                    <Link href={`/manga/${manga.mal_id}`} key={manga.mal_id} className="no-underline">
                         <MangaItem title={manga.title} mal_id={manga.mal_id} synopsis={manga.synopsis} />
                     </Link>
                 ))
